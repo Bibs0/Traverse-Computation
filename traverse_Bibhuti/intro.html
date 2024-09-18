@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Traverse Computation </title>
+
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f0f0f0;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background: #800080;
+            padding: 20px;
+            text-align: center;
+            color: white;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+        }
+        .content {
+            text-align: justify;
+        }
+        .content h2 {
+            color: #800080;
+        }
+        .content p {
+            margin-bottom: 20px;
+        }
+        .btn-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 20px
+        }
+        .btn {
+            background: #4169E1;
+            color: white;
+            padding: 15px 30px;
+            border: none;
+            cursor: pointer;
+            text-decoration: none;
+            font-size: 18px;
+            border-radius: 5px;
+        }
+        .btn:hover {
+            background: #0000FF;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #800080;
+            color: white;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>TRAVERSE COMPUTATION SHEET</h1>
+    <div class="btn-container">
+        <a href="sheet.html" class="btn" id="computeTraverse">Compute Traverse</a>
+         </div>
+</header>
+
+<div class="container">
+    <div class="content">
+        <h2>What is Traverse Computation?</h2>
+        
+        <p>A traverse is a series of connected lines whose lengths and directions are to be measured and the process of surveying to find such measurements is known as traversing. Generally, traversing involves the measurement of the following parameters:<br>
+        1. The length of each survey line.<br>
+        2. The angle between the successive survey lines or the bearings of the lines.
+        </p>
+        <p>In survey engineering, a traverse is a set of points (stations) connected by lines, and it can be either open or closed. Closed traverses form a loop, while open traverses do not. Traverse computations involve calculating coordinates based on bearing and length between points.</p>
+
+        <h2>Types of Traverses</h2>
+        <p><strong>Open Traverse</strong>: An open traverse starts and ends at different points. These are often used when mapping linear features such as roads or pipelines.</p>
+        <p><strong>Closed Traverse</strong>: A closed traverse forms a polygon and starts and ends at the same point, making it ideal for property boundary surveys.</p>
+
+        <h2>Applications of Traverse Computation</h2>
+        <p>Traverse computations are crucial in various surveying and engineering applications such as:</p>
+        <ul>
+            <li>Property boundary surveys</li>
+            <li>Topographic mapping</li>
+            <li>Construction layout</li>
+            <li>Geodetic control surveys</li>
+        </ul>
+
+        <h2>Principle of Traversing</h2>
+        <p>The basic formulas used in traverse computations include:</p>
+        <p> Traverse is based on the principal that if the direction and length of any line is known then the coordinates of its head (end point) can be found from the given coordinates of its tail (starting 2 point). The traversing in which traverse legs are measured by direct chaining on the ground and the traverse angle at every traverse station is measured with a theodolite is called theodolite traversing. 
+        <ul>
+
+            <li>Latitude (∆N) = d cosα</li> 
+            <li>Departure (∆E) = d sinα </li>
+        </ul>
+        If the coordinates of A are known, then coordinate of B can be calculated by the following relation:
+        E2 = E1 + ∆E and N2 = N1 + ∆N
+        </p>
+        
+    </div>
+
+    
+</div>
+
+<footer>
+    © 2024 Traverse Computation by Bibhuti Budhathoki
+</footer>
+
+<script>
+
+    document.getElementById("computeTraverse").addEventListener("click", function() {
+        window.location.href = "sheet.html";  
+</script>
+
+</body>
+
+
+</html>
